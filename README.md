@@ -2,10 +2,12 @@
 Buat yang lagi ngoding di Termux.
 
 # clone:
-[android-sdk-installer-termux](https://github.com/Gopartner/android-sdk-installer-termux.git)
+[Salin](javascript:void(0);) <!--copy to clipboard--><button onclick="navigator.clipboard.writeText('https://github.com/Gopartner/android-sdk-installer-termux.git')">Salin</button>
+
 
 # jalankan program:
-`npm start`
+[Salin](javascript:void(0);) <!--copy to clipboard--><button onclick="navigator.clipboard.writeText('npm start')">Salin</button>
+
 
 
 # Hasil modifikasi
