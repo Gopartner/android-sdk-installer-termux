@@ -1,5 +1,12 @@
 # android-sdk-installer-termux
-Untuk ngoding di Termux.
+Buat yang lagi ngoding di Termux.
+
+# clone:
+[android-sdk-installer-termux](https://github.com/Gopartner/android-sdk-installer-termux.git)
+
+# jalankan program:
+`npm start`
+
 
 # Hasil modifikasi
 # Sumber asli: 
