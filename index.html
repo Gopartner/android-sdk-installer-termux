@@ -4,17 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Android SDK Installer Termux</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Tailwind CSS dari CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Heroicons -->
+  <link href="https://cdn.jsdelivr.net/npm/@heroicons/react/outline.min.css" rel="stylesheet">
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </head>
-<body>
-  <div class="container">
-    <h1>Tombol Salin</h1>
-    <button id="copyCommandButton" onclick="copyCommand()">Salin Command</button>
-    <button id="copyLinkButton" onclick="copyLink()">Salin Link</button>
-    <p id="copiedText"></p>
+<body class="bg-gray-100">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">Card dengan Highlight Kode</h1>
+    <div class="border border-gray-300 rounded-md overflow-hidden shadow-sm">
+      <div class="bg-gray-50 px-4 py-2 flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Kode Repository</h2>
+        <button onclick="copyLink()" class="px-3 py-1 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Salin</button>
+      </div>
+      <pre><code id="code" class="html"></code></pre>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    function copyLink() {
+      var linkToCopy = "https://github.com/Gopartner/android-sdk-installer-termux.git";
+
+      navigator.clipboard.writeText(linkToCopy)
+        .then(() => {
+          alert("Link berhasil disalin: " + linkToCopy);
+        })
+        .catch(err => {
+          console.error('Gagal menyalin link: ', err);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      // Highlight kode menggunakan Highlight.js
+      hljs.highlightElement(document.getElementById('code'));
+    });
+  </script>
 </body>
 </html>
 
