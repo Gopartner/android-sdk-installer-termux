@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Android SDK Installer untuk Termux",
   "scripts": {
+    "build": "git add . && git commit -m \"Pesan komit dari oackage.json\" && git push && exit 1",
     "start": "./app.sh && exit 1"
   },
   "repository": {
