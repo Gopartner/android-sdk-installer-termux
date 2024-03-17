@@ -1,0 +1,23 @@
+{
+  "name": "android-sdk-installer-termux",
+  "version": "1.0.0",
+  "description": "Android SDK Installer untuk Termux",
+  "scripts": {
+    "start": "./app.sh && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gopartner/android-sdk-installer-termux.git"
+  },
+  "keywords": [
+    "Installer",
+    "Android-SDK",
+    "Termux"
+  ],
+  "author": "yudibilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gopartner/android-sdk-installer-termux/issues"
+  },
+  "homepage": "https://github.com/Gopartner/android-sdk-installer-termux#readme"
+}
